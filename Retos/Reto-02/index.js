@@ -3,10 +3,9 @@ const materials = "tronesa";
 
 function manufacture(gifts, materials) {
   const giftBox = [];
-  for (const gift of gifts) {
-   
+  
+  for (const gift of gifts) { 
     if (gift.split("").every((letter) => materials.includes(letter))) {
-      console.log(gift)
       giftBox.push(gift);
     }
   }
